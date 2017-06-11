@@ -13,9 +13,9 @@ function checkNull (text) {
 }
 function checkLen (text) {
 	//\x00-\xff以内的是英文（单字节），以外的是双字节
-	//{1,}个双字节匹配
+	//匹配{1,}个\x00-\xff外的双字节，
 	var nchar = /[^\x00-\xff]{1,}/g;
-	var char = /\w{1,}/g;
+	var char = /[\w+\S]{1,}/g;
 	//转换成数组
 	var str = char.exec(text);
 	var nstr = nchar.exec(text); 
