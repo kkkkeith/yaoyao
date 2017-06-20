@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单联动</title>
+	<link rel="stylesheet" href="y33.css">
+</head>
+<body>
+	<div class="stu">
+	    <span id="students">
+	        <label for="student"><input type="radio" name="student" id="student"> 在校生</label>
+	    </span>
+	    <span id="others">
+	        <label for="other"><input type="radio" name="student" id="other"> 非在校生</label>
+	    </span>
+	</div>
+	<div id="area">
+	    <label for="location">学校</label>
+	    <select id="location">
+	        <option id="city">--请选择--</option>
+		    <option value="beijing" id="beijing">北京</option></label>
+		    <option value="henan" id="henan">河南</option></label>
+	    </select>
+	    <select class="school">
+	        <option id="college">--请选择--</option>
+		    <option id="qh">清华大学</option>
+		    <option id="bd">北京大学</option>
+		    <option id="hd">河南大学</option>
+		    <option id="zd">郑州大学</option>
+	    </select>
+	</div>
+	<div id="work">
+		<label for="site">就业单位 
+		    <select id="site">
+		    	<option>百度</option>
+		    	<option>腾讯</option>
+		    	<option>阿里巴巴</option>
+		    </select>
+		</label>
+	</div>
+<script src="y33.js"></script>
+</body>
+</html>
