@@ -101,7 +101,7 @@ function checkConfirmation (text) {
 		confirmation.style.border = "solid 1px #de000f";
 		inputConfirmation = false;
 	}
-	else if (text == psw.value) {
+	if (text == psw.value) {
 		conHint.innerHTML = "密码输入一致";
 		conHint.style.color = "#56b73c";
 		confirmation.style.border = "solid 1px #56b73c";
@@ -196,13 +196,13 @@ function init () {
     		if (!inputName) {
     			alert("名称格式错误");
     		}
-    		else if (!inputPsw) {
+    		if (!inputPsw) {
     			alert("密码格式错误")
     		}
-    		else if (!inputConfirmation) {
+    		if (!inputConfirmation) {
     			alert("密码输入不一致")
     		}
-    		else if (!inputEmail) {
+    		if (!inputEmail) {
     			alert("email格式错误")
     		}
     		else if (!inputPhone) {
